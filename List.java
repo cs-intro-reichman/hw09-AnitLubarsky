@@ -44,10 +44,13 @@ public class List {
    public String toString() {
     ListIterator iter = listIterator(0);
     StringBuilder sb = new StringBuilder();
+    sb.append("(");
     while (iter.hasNext() == true) {
         sb.append(iter.next().toString());
-        //sb.append("\n");       
-    } 
+        sb.append(" ");       
+    }
+    sb.delete(sb.length()-1, sb.length());
+    sb.append(")");
     return sb.toString();
     }
 
