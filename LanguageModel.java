@@ -150,9 +150,9 @@ public class LanguageModel {
 	 * @param numberOfLetters - the size of text to generate
 	 * @return the generated text
 	 */
-	////public String generate(String initialText, int textLength) {
-		// Your code goes here
-	////}
+	public String generate(String initialText, int textLength) {
+		return "";
+    }
 
     /** Returns a string representing the map of this language model. */
 	public String toString() {
