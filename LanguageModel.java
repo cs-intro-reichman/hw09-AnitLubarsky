@@ -129,8 +129,7 @@ public class LanguageModel {
 
     // Returns a random character from the given probabilities list.
 	public char getRandomChar(List probs) {
-		double r = randomGenerator.nextDouble(0, 1);
-        System.out.println("r =" + r);
+		double r = randomGenerator.nextDouble(0, 1);        
         ListIterator iter = probs.listIterator(0);
         CharData cd = probs.get(0);
         boolean rc = true;
@@ -162,18 +161,19 @@ public class LanguageModel {
 			str.append(key + " : " + keyProbs + "\n");
 		}
 		return str.toString();
-	}
+	}    
 
     public static void main(String[] args) {      
+       
        // List list = new List();
         //String str = "you cannot teach a man anything; you can only help him find it within himself.";
         // list.addFirst(' ');
         // for (int i = str.length()-1; i >=0; i--) {
         //     list.update(str.charAt(i));
         // }
-        LanguageModel lm = new LanguageModel(2);
+      //  LanguageModel lm = new LanguageModel(2);
 
-        lm.train("galileo.txt");
+        //lm.train("galileo.txt");
        // System.out.println("remove: " + list.remove('h') );
       //  System.out.println("char data: " + list.get(2).toString());
        // list.update('H');
