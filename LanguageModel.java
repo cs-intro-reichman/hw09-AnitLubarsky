@@ -64,7 +64,7 @@ public class LanguageModel {
     //         for (List probs : probabilities.values())
     //         calculateProbabilities(probs);
     //         }
-        List list;		        
+       /*  List list;		        
         int windowLength = 2;
         String subStr;
         char ch;
@@ -89,7 +89,7 @@ public class LanguageModel {
 		}
 
        // System.out.println(this.CharDataMap.toString());
-	}
+	}*/
 
     // Computes and sets the probabilities (p and cp fields) of all the
 	// characters in the given list. */
