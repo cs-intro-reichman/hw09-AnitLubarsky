@@ -46,7 +46,7 @@ public class List {
     StringBuilder sb = new StringBuilder();
     while (iter.hasNext() == true) {
         sb.append(iter.next().toString());
-        sb.append("\n");       
+        //sb.append("\n");       
     } 
     return sb.toString();
     }
