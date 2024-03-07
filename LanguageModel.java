@@ -69,13 +69,13 @@ public class LanguageModel {
             // The entire file has been processed, and all the characters have been counted.
             // Proceeds to compute and set the p and cp fields of all the CharData objects
             // in each linked list in the map.
-        List keyProbs;
-        for (String key : CharDataMap.keySet()) {             
-			keyProbs = CharDataMap.get(key);
-			calculateProbabilities(keyProbs);
-            System.out.print(keyProbs);
-            System.out.print(" ");
-		}     
+        // List keyProbs;
+        // for (String key : CharDataMap.keySet()) {             
+		// 	keyProbs = CharDataMap.get(key);
+		// 	calculateProbabilities(keyProbs);
+        //     System.out.print(keyProbs);
+        //     System.out.print(" ");
+		// }     
 	}
 
     // Computes and sets the probabilities (p and cp fields) of all the
