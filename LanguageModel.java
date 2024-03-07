@@ -69,13 +69,13 @@ public class LanguageModel {
             // The entire file has been processed, and all the characters have been counted.
             // Proceeds to compute and set the p and cp fields of all the CharData objects
             // in each linked list in the map.
-        // List keyProbs;
-        // for (String key : CharDataMap.keySet()) {             
-		// 	keyProbs = CharDataMap.get(key);
-		// 	calculateProbabilities(keyProbs);
-        //     System.out.print(keyProbs);
-        //     System.out.print(" ");
-		// }     
+        List keyProbs;
+        for (String key : CharDataMap.keySet()) {             
+			keyProbs = CharDataMap.get(key);
+			calculateProbabilities(keyProbs);
+            System.out.print(keyProbs);
+            System.out.print(" ");
+		}     
 	}
 
     // Computes and sets the probabilities (p and cp fields) of all the
@@ -146,9 +146,10 @@ public class LanguageModel {
         // for (int i = str.length()-1; i >=0; i--) {
         //     list.update(str.charAt(i));
         // }
-        LanguageModel lm = new LanguageModel(2);
+       // LanguageModel lm = new LanguageModel(2);
 
-        lm.train("galileo.txt");
+     //   lm.train("galileo.txt");
+        LanguageModelTester.testTrain();
        // System.out.println("remove: " + list.remove('h') );
       //  System.out.println("char data: " + list.get(2).toString());
        // list.update('H');
