@@ -73,34 +73,9 @@ public class LanguageModel {
         for (String key : CharDataMap.keySet()) {             
 			keyProbs = CharDataMap.get(key);
 			calculateProbabilities(keyProbs);
-            System.out.println(key + " " + keyProbs);
-		}
-     /*    List list;		        
-        int windowLength = 2;
-        String subStr;
-        char ch;
-        In in = new In(fileName);
-        String text = in.readAll();
-        for(int i = text.length() -1 - windowLength; i >= 0 ; i--){
-            subStr = text.substring(i,i + windowLength);
-            ch = text.charAt(i + windowLength);
-            if(this.CharDataMap.containsKey(subStr) == true){
-                this.CharDataMap.get(subStr).update(ch);
-            } else {
-                list = new List();
-                list.update(ch);
-                this.CharDataMap.put(subStr, list);
-            }
-        }
-        List keyProbs;
-        for (String key : CharDataMap.keySet()) {             
-			keyProbs = CharDataMap.get(key);
-			calculateProbabilities(keyProbs);
-            System.out.println(key + " " + keyProbs);
-		}
-
-       // System.out.println(this.CharDataMap.toString());
-       */
+            System.out.print(keyProbs);
+            System.out.print(" ");
+		}     
 	}
 
     // Computes and sets the probabilities (p and cp fields) of all the
@@ -171,9 +146,9 @@ public class LanguageModel {
         // for (int i = str.length()-1; i >=0; i--) {
         //     list.update(str.charAt(i));
         // }
-      //  LanguageModel lm = new LanguageModel(2);
+        LanguageModel lm = new LanguageModel(2);
 
-        //lm.train("galileo.txt");
+        lm.train("galileo.txt");
        // System.out.println("remove: " + list.remove('h') );
       //  System.out.println("char data: " + list.get(2).toString());
        // list.update('H');
